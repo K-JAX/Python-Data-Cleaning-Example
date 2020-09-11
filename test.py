@@ -4,11 +4,11 @@ from matplotlib.animation import FuncAnimation,FFMpegFileWriter
 
 fig, ax = plt.subplots()
 xdata, ydata = [], []
-ln, = plt.plot([], [], 'r', animated=True)
-f = np.linspace(-3, 3, 900)
+ln, = plt.plot([], [], 'b', animated=True)
+f = np.linspace(-3, 9, 400)
 
 def init():
-	ax.set_xlim(-3, 3)
+	ax.set_xlim(-3, 9)
 	ax.set_ylim(-0.25, 2)
 	ln.set_data(xdata,ydata)
 	return ln,
